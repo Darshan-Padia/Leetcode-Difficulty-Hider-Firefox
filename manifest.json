@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Hide Difficulty Tags",
+  "version": "1.0",
+  "description": "Hides difficulty tags and specific color tags from the page.",
+  "permissions": [],
+   "icons": {
+    "128": "icons/leetcode_difficulty_hider_128_128.jpeg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "applications": {
+    "gecko": {
+      "id": "difficulty-hider@example.com"
+    }
+  }
+}
